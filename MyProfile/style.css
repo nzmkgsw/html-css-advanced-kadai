@@ -1,0 +1,179 @@
+/* PC、スマホ共通スタイル */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+p {
+  font-size: 18px;
+}
+
+/* メインビジュアル */
+#main-visual {
+  height: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* 各セクションのタイトル */
+.title-h2 {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px 0 15px 0;
+}
+
+/* About */
+.profile {
+  /* width: 624px; */
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+#profile-pic {
+  width: 141px;
+  height: 142px;
+  border-radius: 50%;
+}
+#name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 10px; 
+}
+/* フッター */
+footer {
+  text-align: center;
+}
+
+/* スマートフォン用スタイル */
+@media screen and (max-width: 767px) {
+  /* ヘッダー */
+  nav {
+    width: 727px;
+    height: 69px;
+    font-size: 34px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  #home {
+    border: 1px solid #000000;
+    padding: 0 20px;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  #home:link {
+    color: #000000;
+  }
+  #home:visited {
+    color: #000000;
+  }
+  #home:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+  .menu {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .menu:link {
+    color: #000000;
+    text-decoration: none;
+  }
+  .menu:visited {
+    color: #000000;
+  }
+  .menu:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  /* About */
+  #about {
+    width: 624px;
+    height: 230px;
+  }
+
+  /* Works */
+  #works {
+    width: 727px;
+    height: 1835px;
+  }
+  .introduction {
+    text-align: center;
+  }
+  .works-image {
+    width: 647px;
+  }
+  .works-content p {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }  
+}
+
+/* PC用スタイル */
+@media screen and (min-width: 768px) {
+  nav {
+    width: 960px;
+    height: 300px;
+    font-size: 34px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  #home {
+    border: 1px solid #000000;
+    padding: 0 20px;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  #home:link {
+    color: #000000;
+  }
+  #home:visited {
+    color: #000000;
+  }
+  #home:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+  .menu {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+  }
+  .menu:link {
+    color: #000000;
+    text-decoration: none;
+  }
+  .menu:visited {
+    color: #000000;
+  }
+  .menu:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  /* Works */
+  #works {
+    width: 573px;
+    height: 329px;
+    margin: 0;
+  }
+  .introduction {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto; 
+  }
+  .works-image {
+    width: 179px;
+    margin: 10px;
+  }
+  .works-content p {
+    width: 179px;
+  }
+}
